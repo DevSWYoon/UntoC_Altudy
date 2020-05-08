@@ -5,13 +5,13 @@ using namespace std;
 
 unsigned C;
 
-unsigned long long h_pow_rem(unsigned A, unsigned B)
+unsigned long long modular(unsigned A, unsigned B)
 {
     if (C == 1) return 0;
     
     if (B == 0) return 1;
     
-    unsigned long long P = h_pow_rem(A, B/2);
+    unsigned long long P = modular(A, B/2);
     P = (P * P) % C;
     
     if (B % 2) return P * A % C;
@@ -25,7 +25,7 @@ int main(void)
     
     cin>>A>>B>>C;
     
-    cout<<h_pow_rem(A,B)<<endl;
+    cout<<modular(A,B)<<endl;
     
     return 0;
 }
