@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
-//더하기 사이클  
+//201510704_김동우  
+//메모리 : 1984 KB, 시간 : 0ms 
 using namespace std;
 
 void algorithm(int n,int tmp){
