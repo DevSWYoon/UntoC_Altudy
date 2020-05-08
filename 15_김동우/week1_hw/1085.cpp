@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
-
+//201510704_김동우  
+//메모리 : 1980 KB, 시간 : 0ms 
 using namespace std;
 
 int main(void){
