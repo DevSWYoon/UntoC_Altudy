@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
-
+//201510704_김동우  
+//메모리 : 1984 KB, 시간 : 0 ms
 using namespace std;
 long long dp[101];
 
