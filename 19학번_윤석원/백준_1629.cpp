@@ -5,11 +5,11 @@ using namespace std;
 
 unsigned C;
 
-unsigned long long h_pow_rem(unsigned long long A, unsigned long long B)
+unsigned long long h_pow_rem(unsigned A, unsigned B)
 {
-    if (B == 0 && C > 1) return 1;
+    if (C == 1) return 0;
     
-    else if (B == 0) return 0;
+    if (B == 0) return 1;
     
     unsigned long long P = h_pow_rem(A, B/2);
     P = (P * P) % C;
