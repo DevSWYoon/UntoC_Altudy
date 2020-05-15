@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
-
+//201510704_김동우  
+//메모리 : 1984 KB 시간 : 0ms 
 using namespace std;
 // 주의할 점 : 너무 큰 수가 되버리면 오버플로우가 된다. 
 // A-B = k *M 이면 A mod M = B mod M 이다. 
