@@ -5,18 +5,26 @@
 using namespace std;
 
 class Vector{
-public:
+private:
     int _0;
     int _1;
+public:
     Vector(){
         _0 = 0;
         _1 = 0;
     }
     ~Vector(){}
+    void setup(int a, int b);
     Vector& operator= (const Vector&v);
     Vector operator+ (const Vector &v);
     friend ostream& operator<< (ostream& os, Vector v);
 };
+
+void Vector::setup(int a, int b)
+{
+    _0 = a;
+    _1 = b;
+}
 
 ostream& operator<< (ostream& os, Vector v)
 {
@@ -49,10 +57,8 @@ int main(void)
         int N;
         cin>>N;
         Vector a[N+1];
-        a[0]._0 = 1;
-        a[0]._1 = 0;
-        a[1]._0 = 0;
-        a[1]._1 = 1;
+        a[0].setup(1, 0);
+        a[1].setup(0, 1);
         
         if(N < 2){
             if(N==0) result[i] = a[0];
