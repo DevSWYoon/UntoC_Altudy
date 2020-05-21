@@ -8,6 +8,7 @@ sys.setrecursionlimit(10000)
 result = 0
 
 ## 기존에 사용하던 방식..
+## 메모리와 시간 모두 너무 커짐.
 def getAnswer(coins, index, value): 
     global result
           
@@ -41,7 +42,9 @@ def main():
     coins.sort()
 
     # getAnswer(coins, n, k)
-    
+
+    ## 방법2 dynamic programming
+    ## 원래는 n+1개의 row가 있었으나 메모리가 너무 커짐
     dp = [0 for col in range(k+1)]
     dp[0] = 1
 

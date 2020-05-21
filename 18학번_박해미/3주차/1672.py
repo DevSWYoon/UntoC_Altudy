@@ -22,6 +22,7 @@ for i in range(length-1, 0, -1) :
     An = getIndex(dna[i])
     An_1 = getIndex(dna[i-1])
     newword = dnaTable[An_1][An]
+    # 0 - i-1까지의 str + 합성된 dna str
     dna = dna[:i-1] + newword
     
 print(dna[0]);
